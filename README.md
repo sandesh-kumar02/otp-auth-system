@@ -35,6 +35,6 @@ A full-stack authentication system built with **Node.js**, **Express**, and **Mo
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/your-username/otp-auth-system.git
+git clone https://github.com/sandesh-kumar02/otp-auth-system/tree/main
 cd otp-auth-system
 
