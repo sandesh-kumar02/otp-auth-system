@@ -1,0 +1,79 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #ff512f, #dd2476);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Container */
+.form-container {
+  background: #fff;
+  padding: 30px 40px;
+  border-radius: 15px;
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  width: 350px;
+}
+
+.form-container h2 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Input fields */
+.form-container input {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+  transition: 0.3s;
+}
+
+.form-container input:focus {
+  border-color: #dd2476;
+  box-shadow: 0 0 8px rgba(221, 36, 118, 0.5);
+}
+
+/* Button */
+.form-container button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 15px;
+  background: linear-gradient(135deg, #ff512f, #dd2476);
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.form-container button:hover {
+  transform: scale(1.05);
+  background: linear-gradient(135deg, #dd2476, #ff512f);
+}
+
+/* Forgot Password link */
+.form-container p {
+  margin-top: 20px;
+  font-size: 14px;
+  color: #555;
+}
+
+.form-container a {
+  text-decoration: none;
+  color: #dd2476;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.form-container a:hover {
+  color: #ff512f;
+}

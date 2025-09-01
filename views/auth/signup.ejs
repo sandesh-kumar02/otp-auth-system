@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Signup Page</title>
+    <link rel="stylesheet" href="css/signup.css" />
+  </head>
+  <body>
+    <div class="form-container">
+      <h2>Signup</h2>
+      <form action="/signup" method="POST">
+        <input
+          type="text"
+          name="username"
+          placeholder="Enter your name"
+          required
+        />
+        <% if(errors.username){%>
+        <p style="color: red"><%= errors.username.msg %></p>
+        <% } %>
+        <input
+          type="email"
+          name="email"
+          placeholder="Enter your email"
+          required
+        />
+        <% if(errors.email){%>
+        <p style="color: red"><%= errors.email.msg %></p>
+        <% } %>
+        <input
+          type="password"
+          name="password"
+          placeholder="Enter your password"
+          required
+        />
+        <% if(errors.password){%>
+        <p style="color: red"><%= errors.password.msg %></p>
+        <% } %>
+        <button type="submit">Submit</button>
+      </form>
+      <p>Already have an account? <a href="/login">Login</a></p>
+    </div>
+  </body>
+</html>
